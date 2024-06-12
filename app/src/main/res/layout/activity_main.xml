@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text"
+        android:text="@string/flight_one"
+        android:id="@+id/one"
+        android:layout_toLeftOf="@+id/two"
+        android:textSize="@dimen/sp_20"
+        android:textStyle="bold"
+        android:background="@color/material_dynamic_neutral50"/>
+
+    <TextView
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:text="@string/flight_two"
+        android:textSize="@dimen/sp_20"
+        android:layout_margin="@dimen/dp_80"
+        android:textStyle="bold"
+        android:background="@color/material_dynamic_neutral50"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/flight_three"
+        android:textSize="@dimen/sp_20"
+        android:textStyle="bold"
+        android:layout_above="@+id/text2"
+        android:layout_toRightOf="@+id/two"
+        android:background="@color/material_dynamic_neutral50"
+        />
+    <TextView
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_140"
+        android:text="@string/board"
+        android:textSize="@dimen/sp_30"
+        android:id="@+id/text"
+        android:textStyle="bold"
+        android:background="@color/material_dynamic_primary90"
+        android:layout_marginRight="-30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dp_40"
+        android:gravity="center"
+        android:layout_toLeftOf="@+id/button"/>
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_140"
+        android:layout_marginLeft="-30dp"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_toRightOf="@+id/button"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/take_off"
+        android:background="@color/material_dynamic_primary90"
+        android:textSize="@dimen/sp_30"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_70"
+        android:layout_centerInParent="true"
+        android:text="@string/center"
+        android:textColor="@color/material_dynamic_neutral100" />
+
+    <TextView
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_40"
+        android:layout_below="@+id/switch1"
+        android:layout_marginStart="@dimen/sp_10"
+        android:layout_marginTop="@dimen/sp_10"
+        android:layout_marginEnd="@dimen/sp_10"
+        android:layout_marginBottom="@dimen/sp_10"
+        android:text="@string/one_traveller"
+        android:background="@android:color/holo_orange_dark"
+        android:textSize="@dimen/sp_20"
+        android:textStyle="bold"
+        android:id="@+id/traveller"/>
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/one_way"
+        android:textSize="@dimen/sp_20"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/text"
+        android:layout_margin="@dimen/sp_10"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="move to next screen"
+        android:id="@+id/next"
+        android:layout_below="@+id/traveller"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
+

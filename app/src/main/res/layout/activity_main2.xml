@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculator"
+        android:textSize="@dimen/dp_40"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/dp_40"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnNumber"
+        android:text="@string/number"
+        android:layout_centerInParent="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnNumber"
+        android:text="@string/Mul"
+        android:id="@+id/btnMul"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/sp_20"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/div"
+        android:layout_below="@+id/btnNumber"
+        android:id="@+id/btnDiv"
+        android:layout_margin="@dimen/sp_20"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add"
+        android:layout_toStartOf="@+id/btnNumber"
+        android:id="@+id/btnAdd"
+        android:layout_alignBaseline="@id/btnNumber"
+        android:layout_margin="@dimen/sp_20"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sub"
+        android:id="@+id/btnSub"
+        android:layout_alignBaseline="@id/btnNumber"
+        android:layout_toEndOf="@id/btnNumber"
+        android:layout_margin="@dimen/sp_20"/>
+
+</RelativeLayout>

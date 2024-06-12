@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Relative layout</string>
+    <string name="hello">Hello</string>
+    <string name="flightone">Flight one</string>
+    <string name="flight_one">Flight one</string>
+    <string name="flight_two">Flight two</string>
+    <string name="flight_three">Flight three</string>
+    <string name="board">Board</string>
+    <string name="take_off">Take off</string>
+    <string name="one_way">One way</string>
+    <string name="one_traveller">One traveller</string>
+    <string name="Mul">*</string>
+    <string name="div">/</string>
+    <string name="add">+</string>
+    <string name="sub">-</string>
+    <string name="center">Center</string>
+    <string name="calculator">Calculator</string>
+    <string name="dial_number">Dial Number</string>
+    <string name="number">Number</string>
+</resources>
